@@ -1,0 +1,19 @@
+<div class="">
+  <nav class="navbar navbar-dark bg-primary" style="justify-content: end;">
+    <button *ngIf="userId === 0" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a *ngIf="userId > 0" class="nav-link text-white ml-4" (click)="backToHome()"><i class="fas fa-arrow-left fa-lg"></i></a>
+    <a class="nav-link text-white ml-4" [routerLink]="['/']">Data Peace</a>
+  </nav>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-primary p-4">
+      <ul>
+        <li class="nav-item">
+          <a [routerLink]="['/']" class="nav-link text-white">Home</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
