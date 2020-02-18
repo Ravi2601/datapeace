@@ -57,7 +57,6 @@ export class TableViewComponent implements OnInit {
   }
 
   sortArr(sortBy) {
-
     this.tableArr.sort((a, b) => {
       if (a[sortBy] < b[sortBy]) {
           return -1;
@@ -68,12 +67,6 @@ export class TableViewComponent implements OnInit {
       }
     });
     this.setPage(this.pager.currentPage);
-  }
-
-  sortByDetails(a, b) {
-    if (a.this.sortBy > b.this.sortBy) { return 1; }
-    if (b.this.sortBy > a.this.sortBy) { return -1; }
-    return 0;
   }
 
 }

@@ -40,7 +40,7 @@ table.table-bordered > tbody > tr > td{
 }
 
 table td, .table th {
-  padding: .5rem;
+  padding: .4rem;
   vertical-align: middle;
 }
 
